@@ -1,0 +1,586 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    line-height: 1.4;
+    background: #f4f4f4;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+ul{
+    list-style: none;
+}
+
+img{
+    width: 100%;
+}
+
+/* Utility */
+.container{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.selected{
+    background: #c72727;
+    color: white;
+}
+
+.sports-category{
+    color: white;
+    background-color: #F99500;
+    padding: 0.5rem;
+    border-radius: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+}
+
+.ent-category{
+    color: white;
+    background-color: #A66BBE;
+    padding: 0.5rem;
+    border-radius: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+}
+
+.tech-category{
+    color: white;
+    background-color: #009CFF;
+    padding: 0.5rem;
+    border-radius: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+}
+
+.card{
+    background-color: white;
+    padding: 1rem;
+}
+
+/* Navbar Section */
+#navbar{
+    background: white;
+    position: sticky;
+    top: 0;
+}
+#navbar nav{
+    display: grid;
+    grid-template-columns: 6fr 3fr 1fr;
+    padding: 0.5rem;
+    align-items: center;
+}
+
+.logo{
+    width: 200px;
+}
+
+.social-media{
+    justify-self: center;
+}
+.social-media i{
+    color: grey;
+}
+
+.social-media i:nth-child(1):hover{
+    color: #3b5998;
+}
+
+.social-media i:nth-child(2):hover{
+    color: #00acee;
+}
+
+.social-media i:nth-child(3):hover{
+    color: #8a3ab9;
+}
+
+.social-media i:nth-child(4):hover{
+    color: #FF0000;
+}
+
+.nav-bar{
+    justify-self: end;
+}
+
+.nav-bar ul{
+    display: flex;
+}
+
+.nav-bar ul a{
+    font-weight: bold;
+    display: inline-block;
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+
+
+
+/* Landing Section */
+.landing-page{
+    height: 60vh;
+    background-image: linear-gradient(rgba(58, 56, 56, 0.637), rgba(58, 57, 57, 0.637)), url(./img/featured.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    color: white;
+}
+
+.landing-content{
+    height: 50vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* justify-content: center; */
+    align-items: center;
+    padding: 2rem;
+}
+
+.landing-text h1{
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    font-weight: bold;
+    margin: 0.5rem 0;
+}
+
+.landing-text a:last-child{
+    display: inline-block;
+    color: white;
+    background-color: #c72727;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    border-radius: 4px;
+}
+
+.landing-text a:last-child:hover{
+    background-color: #b30b0b;
+}
+
+
+
+/* -------------------------------------------------------------------------------------- */
+/* Articles Section */
+section{
+    padding: 2rem 2rem;
+}
+
+.articles{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 1rem;
+}
+
+.articles h3, .articles p, .articles a{
+    margin-top: 1rem;
+}
+
+.article-1{
+    grid-column: 1/span 2;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    grid-gap: 1rem;
+}
+
+.article-7{
+    grid-column: 2/span 2;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    grid-gap: 1rem;
+}
+
+.article-2{
+    background: #3b5998;
+    color: white;
+}
+
+.article-6{
+    background: #800080;
+    color: white;
+}
+
+
+/* ------------------------------------------------------------------------------------------------------ */
+/* Footer Section */
+footer{
+    background:#333333;
+    color: white;
+}
+.boxes{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 1rem;
+    padding: 2rem 0;
+}
+
+.boxes img{
+    width: 50%;
+}
+
+.boxes h3{
+    text-transform: uppercase;
+}
+
+.boxes p, .boxes ul{
+    padding: 1rem 0;
+}
+
+.box-1, .box-2, .box-3, .box-4{
+    padding: 1rem;
+}
+
+.box-5{
+    grid-column: 1/span 4;
+    /* justify-self: center; */
+    text-align: center;
+    background: #252525;
+}
+
+.box-3 li a{
+    display: block;
+    border-bottom: 1px solid rgb(78, 78, 78);
+    padding-bottom: 0.5rem;
+    color: white;
+}
+
+.box-3 li a:hover{
+    color: #c72727;
+}
+
+.box-2 input{
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.box-2 button{
+    width: 100%;
+    padding: 0.5rem;
+    background: #c72727;
+    color: white;
+    border: none;
+    margin-top: 3px;
+}
+
+.box-2 button:hover{
+    background: #b30b0b;
+}
+
+.box-4 a{
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: #F99500;
+    color: white;
+}
+
+.box-4 a:hover{
+    background: #df8703
+}
+
+
+
+
+/* --------------------------------------------About.html-------------------------------------------- */
+/* About Section */
+.about-section{
+    display: grid;
+    grid-template-areas: 
+    'main main main aside'
+    'main main main .'
+    'main main main .';
+    grid-gap: 1rem;
+}
+
+.about-section main{
+    grid-area: main;
+    padding: 1rem;
+}
+
+.about-section aside{
+    grid-area: aside;
+    padding: 1rem;
+    background-color: #c72727;
+    color: white;
+}
+
+.about-section aside a{
+    display: inline-block;
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #F99500;
+    color: white;
+    text-align: center;
+}
+
+.about-section aside p, .about-section main p{
+    padding: 0.5rem 0;
+}
+
+.about-section aside h1{
+    font-size: 1.7rem;
+}
+
+
+
+
+/* ---------------------------------------Article.html-------------------------------------------------- */
+/* Article Section */
+.article-section{
+    display: grid;
+    /* grid-template-columns: 5fr 1fr; */
+    grid-template-rows: 1fr 0.5fr 2fr;
+    grid-template-areas: 
+    'main main main menu'
+    'main main main aside'
+    'main main main .'
+    'main main main .';
+    grid-gap: 1rem;
+
+}
+
+.article-section main{
+    grid-area: main;
+}
+
+.article-section menu{
+    grid-area: menu;
+}
+
+.article-section aside{
+    grid-area: aside;
+}
+
+.article-section main div{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+    background-color:#EEEEEE;
+}
+
+.article-section main h1{
+    padding: 0.5rem 0;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.article-section menu h1{
+    padding-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.article-section menu ul a{
+    display: block;
+    padding: 0.5rem 0;
+    border-bottom: 1px dotted #a0a0a0;
+}
+
+.article-section menu ul a:hover{
+    color: #F99500;
+}
+
+.article-section aside{
+    padding: 1rem;
+    background-color: #F99500;
+    color: white;
+}
+
+.article-section aside p{
+    padding: 1rem 0
+}
+
+.article-section aside h1{
+    text-transform: uppercase;
+}
+
+.article-section aside a{
+    display: inline-block;
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #333333;
+    color: white;
+    text-align: center;
+}
+
+.article-section aside a:hover{
+    background-color: #252525;
+}
+
+
+
+/* -------------------------------------------Media Queries-------------------------------------------  */
+/* --------------------------------------768px----------------------------------------- */
+
+@media(max-width: 768px){
+    /* index.html Articles Section */
+    .articles{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .article-1{
+        grid-column: 1/span 1;
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .article-7{
+        grid-column: 1/span 1;
+        grid-template-columns: repeat(1,1fr);
+    }
+
+
+    /* article.html Article Section */
+    .article-section main div{
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 1rem 0;
+    }
+
+    .article-section main div p{
+        padding: 0.5rem 0;
+    }
+}
+
+/* --------------------------------------540px----------------------------------------- */
+
+
+@media(max-width: 540px){
+    /* Navbar Section */
+    #navbar nav{
+        display: grid;
+        grid-template-columns: 1fr 0.5fr;
+        padding: 0.5rem;
+        align-items: center;
+    }
+
+    .social-media{
+        display: none
+    }
+
+    /* index.html Landing Section */
+    .landing-content{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* index.html Articles Section */
+    section{
+        padding: 0.5rem;
+    }
+
+    section h2{
+        padding: 1rem 0;
+    }
+
+    .articles{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    /* footer */
+    .boxes{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .box-5{
+        grid-column: 1/span 1;
+    }
+
+    /* About.html  About Section*/
+    .about-section{
+        grid-template-areas: 
+        'main'
+        'aside';
+    }
+
+    /* article.html Article Section */
+    .article-section{
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        'main'
+        'menu'
+        'aside';
+    }
+
+    .article-section main h1{
+        font-size: 1.2rem;
+    }
+    
+}
+
+
+/* --------------------------------------400px----------------------------------------- */
+
+ @media(max-width: 400px){
+     /* Navbar Section */
+     #navbar nav{
+        grid-template-columns: 1fr;
+        align-items: center;
+    }
+    .logo{
+        justify-self: center;
+    }
+    .nav-bar{
+        justify-self: center;
+    }
+
+} 
+
+@media(max-width: 350px){
+
+    /*Landing Page Section  */
+    .landing-page{
+        height: 85vh;
+    }
+
+    .landing-page{
+        height: 85vh;
+    }
+    .landing-content{
+        height: 100%;
+    }
+    
+    .landing-text h1{
+        font-size: 1.3rem;
+    }
+}
+
+
+ /* --------------------------------------Landscape----------------------------------------- */
+ /* --------------------------------------max-height:540px----------------------------------------- */
+
+@media(max-height:540px){
+
+    /* index.html Landing Page Section */
+    .landing-page{
+        height: 100vh;
+    }
+
+    .landing-content{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+} 
+
+/* --------------------------------------max-height:360px----------------------------------------- */
+ 
+ @media(max-height: 360px){
+
+      /* footer */
+    .boxes{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .box-5{
+        grid-column: 1/span 1;
+    }
+} 
